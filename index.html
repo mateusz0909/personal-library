@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booklist
+    </title>
+</head>
+
+
+<body>
+    <div class="app">
+        <h2>MY LIBRARY</h2>
+        <div class="container">
+            <form>
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author" required />
+                <label for="title">Title</label>
+                <input required type="text" name="title" id="title" />
+                <label for="pages">Pages</label>
+                <input min="0" required type="number" name="pages" id="pages" />
+                <label for="read">Read?</label>
+                <select name="read" id="read">
+                    <option value="Yes" selected>Yes</option>
+                    <option value="No">No</option>
+                </select>
+
+                <button type="submit">SUBMIT NEW BOOK</button>
+            </form>
+            <div class="books_container">
+
+                <div id="books">
+                    <h3>-- No books added yet --</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

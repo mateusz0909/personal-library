@@ -1,0 +1,132 @@
+:root {
+  --white: rgb(218, 218, 218);
+  --background: rgba(0, 0, 0, 0.849);
+}
+
+body {
+  background-color: var(--background);
+  font-family: Roboto;
+  color: var(--white);
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.books_container {
+  display: flex;
+  position: absolute;
+  right: 30px;
+  max-width: 75%;
+}
+
+label {
+  margin-top: 1em;
+  color: var(--white);
+}
+input,
+select {
+  background-color: transparent;
+  border: 2px solid var(--white);
+  width: 300px;
+  color: var(--white);
+  height: 30px;
+  padding: 5px;
+}
+
+input[type="text"]:focus {
+  border: 2px solid red;
+}
+
+select:focus-within {
+  border-color: turquoise;
+}
+select {
+  width: 314px;
+  height: 30px;
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid var(--white);
+  margin-top: 1em;
+  color: var(--white);
+  height: 40px;
+  box-shadow: 6px 6px 0px -3px var(--white);
+}
+button:hover {
+  color: var(--white);
+  font-weight: bolder;
+  cursor: pointer;
+}
+button#read-btn {
+  height: 20px;
+  box-shadow: none;
+}
+button#read-btn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+form {
+  position: absolute;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  border-right: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
+  padding: 0px 25px 25px 25px;
+}
+
+td {
+  width: 200px;
+}
+th {
+  text-align: center;
+}
+table,
+td {
+  border-collapse: collapse;
+  color: var(--white);
+  padding-left: 5px;
+}
+th,
+td {
+  border-bottom: 1px solid;
+}
+h3 {
+  position: relative;
+  right: 250%;
+  top: 250%;
+}
+.hidden {
+  display: none;
+}
+
+#books {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  width: 500px;
+  border: 1px solid var(--white);
+  box-shadow: 7px 7px 6px -4px var(--white);
+}
+#remove {
+  align-self: flex-end;
+}
+#remove:hover {
+  background-color: white;
+  color: var(--background);
+  cursor: pointer;
+}
